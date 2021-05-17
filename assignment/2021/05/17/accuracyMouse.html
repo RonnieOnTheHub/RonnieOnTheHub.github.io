@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Accuracy of diagonal mouse paths - Ronan&#39;s Collection
+    
+  </title>
+
+  <meta name="description" content="During our day-to-day life we constantly use computers. To improve our efficiency, programs should be ergonomically optimized to increase speed when using th...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="https://rmunro.nl/assignment/2021/05/17/accuracyMouse.html">
+  <link rel="alternate" type="application/rss+xml" title="Ronan&#39;s Collection" href="/feed.xml">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    MathJax.Hub.Config({
+      "HTML-CSS": {
+        availableFonts: ["TeX"],
+      },
+      tex2jax: {
+        inlineMath: [['$','$'],["\\(","\\)"]]},
+        displayMath: [ ['$$','$$'], ['\[','\]'] ],
+      TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "color.js"],
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      showProcessingMessages: false,
+      messageStyle: "none",
+      imageFont: null,
+      "AssistiveMML": { disabled: true }
+    });
+  </script>
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Ronan&#39;s Collection</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Posts</a>
+        </li>
+      <!--   <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+ -->      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/img/posts/accuracyMouse/banner.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Accuracy of diagonal mouse paths</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">Ronan Munro</a>
+              on May 17, 2021 &middot; <span class="reading-time" title="Estimated read time">
+  
+   3 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>During our day-to-day life we constantly use computers.<span class="intersentencespace"></span> To improve our efficiency, programs should be ergonomically optimized to increase speed when using the program.<span class="intersentencespace"></span> This can be done by maximising the accuracy of the user when using the program.<span class="intersentencespace"></span> The accuracy of a user can be measured in the form of the maximum width of the mouse path when using the program.<span class="intersentencespace"></span> For laptop users, what path angles should be preferred or avoided?<span class="intersentencespace"></span> So; Do laptop users on average have the same accuracy with a diagonal mouse path compared to a straight mouse path?</p>
+<div class="section-star" id="methods"><h2><a href="#methods" class="heading">Methods</a></h2>
+<p>The dataset used for this experiment was a mouse test done by students at the Eindhoven University of Technology.<span class="intersentencespace"></span> Outliers of the dataset were removed, by only keeping the 99th percentile of the data whilst keeping maximum data.<span class="intersentencespace"></span> For this experiment, only trackpad users were selected as this is the group where the highest gain in efficiency can be achieved.<span class="intersentencespace"></span> All paths were either grouped into a ‘Diagonal’ or ‘Straight’ angle types.<span class="intersentencespace"></span> To compare the means of these groups, a two-sample t-test was used.</p>
+</div>
+<div class="section-star" id="hypothesis"><h2><a href="#hypothesis" class="heading">Hypothesis</a></h2>
+<div class="equation">\[ H_0: \mu_{width straight} = \mu_{width diagonal} \]
+</div><div class="equation">\[ H_a: \mu_{width straight} &gt; \mu_{width diagonal} \]
+</div><div id="uid1" data-tralics-id="uid1" data-number="1" class="figure" noindent="true"><span class="graphics"><img src="/img/posts/accuracyMouse/pathsEdited.jpeg" alt="pathsEdited" /></span>
+<div class="caption"><span class="header">Figure 1: </span><span class="description">Mouse trajectory paths - all trials</span></div></div>
+<div id="fig-dist" data-tralics-id="uid2" data-number="2" class="figure"><span class="graphics"><img src="/img/posts/accuracyMouse/Distribution.jpeg" alt="Distribution" /></span><div class="caption"><span class="header">Figure 2</span></div></div>
+</div>
+<div class="section-star" id="discussion"><h2><a href="#discussion" class="heading">Discussion</a></h2>
+<p>The mouse trajectory paths shows trajectories in all directions, so there are no direction assumptions.<span class="intersentencespace"></span> The dataset has a length of more than thirteen thousand and is large enough.<span class="intersentencespace"></span> Even still the length of the dataset is large, the cleaned also follows a distribution curve.<span class="intersentencespace"></span> For all these reasons, the two-sample t-test is valid and applied.<span class="intersentencespace"></span> The p-value is (a lot) smaller than an alpha of 0.05, for a 95% confidence interval.<span class="intersentencespace"></span> The null hypothesis (<span class="inline_math">\( 𝐻_0 \)</span>) is rejected.</p>
+</div>
+<div class="section-star" id="conclusion"><h2><a href="#conclusion" class="heading">Conclusion</a></h2>
+<p>The null hypothesis (<span class="inline_math">\( 𝐻_0 \)</span>) is rejected based on that the p-value is much smaller than an alpha of 0.05, and the alternative hypothesis (<span class="inline_math">\( 𝐻_𝑎 \)</span>) is accepted.<span class="intersentencespace"></span> Meaning, the mean width of trajectories that are straight is lower, and the mean of diagonal trajectories are larger.<span class="intersentencespace"></span> Trackpad users are less accurate for diagonal trajectories.<span class="intersentencespace"></span> For using a program, this means that diagonal trajectories should be avoided to aid in maximising accuracy and therefor efficiency.
+</p></div>
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          
+          <a class="btn btn-primary float-right" href="/post/2021/05/17/welcome-to-jekyll.html" data-toggle="tooltip" data-placement="top" title="First post!">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:ronan18@icloud.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/romunro">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Ronan Munro 2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35083577-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-35083577-1');
+</script>
+
+
+
+</body>
+
+</html>
