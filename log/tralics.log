@@ -1,23 +1,23 @@
 This is tralics 2.15.1, a LaTeX to XML translator, running on TuLap
 Copyright INRIA/MIAOU/APICS/MARELLE 2002-2012, Jos\'e Grimm
 Licensed under the CeCILL Free Software Licensing Agreement
-Starting translation of file /tmp/polytex20210517-25446-1l3trob.tex.
+Starting translation of file /tmp/polytex20210517-25471-6aviha.tex.
 Dummy default configuration file used.
 Translating section command div0: Methods.
 Translating section command div0: Hypothesis.
 Warning: junk in figure
-detected on line 64 of file /tmp/polytex20210517-25446-1l3trob.tex.
+detected on line 64 of file /tmp/polytex20210517-25471-6aviha.tex.
 Translating section command div0: Discussion.
 Translating section command div0: Conclusion.
 Bib stats: seen 0 entries.
 Math stats: formulas 0, kernels 0, trivial 0, \mbox 0, large 0, small 0.
-Buffer realloc 13, string 1555, size 21092, merge 1
+Buffer realloc 13, string 1555, size 21082, merge 1
 Macros created 198, deleted 10; hash size 2389; foonotes 0.
 Save stack +86 -86.
 Attribute list search 1617(1505) found 1122 in 1175 elements (1120 at boot).
 Number of ref 0, of used labels 0, of defined labels 1, of ext. ref. 0.
 There were 2 images.
 Following images not defined: /img/posts/accuracyMouse/pathsEdited, /img/posts/accuracyMouse/Distribution.
-Output written on /tmp/polytex20210517-25446-1l3trob.xml (3619 bytes).
+Output written on /tmp/polytex20210517-25471-6aviha.xml (3619 bytes).
 No error found.
-(For more information, see transcript file /tmp/polytex20210517-25446-1l3trob.log)
+(For more information, see transcript file /tmp/polytex20210517-25471-6aviha.log)
