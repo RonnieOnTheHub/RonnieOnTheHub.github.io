@@ -18,3 +18,12 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         ruby:buster /bin/bash -c "chmod -R 777 /srv/jekyll && cd /srv/jekyll && bundler install && bundler exec jekyll build --future"
+    - name: Publish GitHub pages
+      # You may pin to the exact commit or the version.
+      # uses: andre487/publish-to-orphan-gh-pages@5d013a764e0a52538f680697fd1ccc7c61169284
+      uses: andre487/publish-to-orphan-gh-pages@v1.0.1-m
+      with:
+        # Source dir with static site build
+        src_dir: ${{ github.workspace }}/_site
+        # Dir to publish site content
+        dest_dir: .
