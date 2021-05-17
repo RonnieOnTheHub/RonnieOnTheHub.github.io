@@ -1,2 +1,30 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+.container img {
+  display: block;
+  transition: 1s ease-in-out;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container p {
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.figure {
+	width: 100%;
+}
+
+.container img:hover {
+	cursor: pointer;
+}
+
+.container img {
+}
+
+.container img.zoom {
+	// max-width: none;
+	width: 160%;
+}

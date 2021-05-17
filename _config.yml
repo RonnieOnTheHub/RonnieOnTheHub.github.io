@@ -8,7 +8,7 @@ url:                "https://rmunro.nl"
 
 # Social Profiles
 # twitter_username:   SBootstrap
-# github_username:    StartBootstrap
+github_username:    romunro
 # facebook_username:  StartBootstrap
 # instagram_username:  
 # linkedin_username:
@@ -24,6 +24,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-latex
 
 exclude:
   - .sass-cache/
@@ -36,3 +37,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - contact.html
