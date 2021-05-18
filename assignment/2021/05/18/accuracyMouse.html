@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <meta name="description" content="During our day-to-day life we constantly use computers. To improve our efficiency, programs should be ergonomically optimized to increase speed when using th...">
+  <meta name="description" content="During our day-to-day life we constantly use computers. Programs should be ergonomically optimized to increase speed, and therefore efficiency, when using th...">
 
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -97,7 +97,7 @@
               <a href="#">Ronan Munro</a>
               on May 18, 2021 &middot; <span class="reading-time" title="Estimated read time">
   
-   3 mins  read </span>
+   5 mins  read </span>
 
             </span>
           </div>
@@ -110,23 +110,26 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-        <p>During our day-to-day life we constantly use computers.<span class="intersentencespace"></span> To improve our efficiency, programs should be ergonomically optimized to increase speed when using the program.<span class="intersentencespace"></span> This can be done by maximising the accuracy of the user when using the program.<span class="intersentencespace"></span> The accuracy of a user can be measured in the form of the maximum width of the mouse path when using the program.<span class="intersentencespace"></span> For laptop users, what path angles should be preferred or avoided?<span class="intersentencespace"></span> So; Do laptop users on average have the same accuracy with a diagonal mouse path compared to a straight mouse path?</p>
+        <p>During our day-to-day life we constantly use computers.<span class="intersentencespace"></span> Programs should be ergonomically optimized to increase speed, and therefore efficiency, when using the program.<span class="intersentencespace"></span> This can be done by improving the accuracy of the user when using the program.<span class="intersentencespace"></span> One meassurement of accuracy is the width of the user’s mouse path when using the program.<span class="intersentencespace"></span> During this research the focus was specifically put on laptop users, as this is where improvements to accuracy can easily be made.<span class="intersentencespace"></span> The main point of research was if laptop users are just as accurate in diagonal mouse paths as in straight mouse paths.<span class="intersentencespace"></span> So in the case of designing programs for laptop users, should certain mouse path angles be preferred or avoided?<span class="intersentencespace"></span> So; Do laptop users on average have the same accuracy with a diagonal mouse path compared to a straight mouse path?</p>
 <div class="section-star" id="methods"><h2><a href="#methods" class="heading">Methods</a></h2>
-<p>The dataset used for this experiment was a mouse test done by students at the Eindhoven University of Technology.<span class="intersentencespace"></span> Outliers of the dataset were removed, by only keeping the 99th percentile of the data whilst keeping maximum data.<span class="intersentencespace"></span> For this experiment, only trackpad users were selected as this is the group where the highest gain in efficiency can be achieved.<span class="intersentencespace"></span> All paths were either grouped into a ‘Diagonal’ or ‘Straight’ angle types.<span class="intersentencespace"></span> To compare the means of these groups, a two-sample t-test was used.</p>
+<p>The dataset used for this experiment was a mouse test done by students at the Eindhoven University of Technology.<span class="intersentencespace"></span> Outliers of the dataset were removed, by only keeping the 99th percentile of the data, whilst keeping maximum data.<span class="intersentencespace"></span> Further cleaning of the data, and checking for equal distrubution, was not neccesary as the size of the dataset is large enough (&gt;13000).<span class="intersentencespace"></span> For this experiment, only trackpad users were selected as this is the group where the highest gain in efficiency can be achieved.<span class="intersentencespace"></span> All paths were either grouped into a ‘Diagonal’ or ‘Straight’ angle types.<span class="intersentencespace"></span> As the mouse experiment only had 8 directions, 4 straight and 4 diagonal with equal chances, the data was equally distrubuted.<span class="intersentencespace"></span> To compare the means of these groups, a two-sample t-test was used.</p>
+<div id="fig-dist" data-tralics-id="uid1" data-number="1" class="figure"><span class="graphics"><img src="/img/posts/accuracyMouse/Distribution.jpeg" alt="Distribution" /></span><div class="caption"><span class="header">Figure 1</span></div></div>
 </div>
 <div class="section-star" id="hypothesis"><h2><a href="#hypothesis" class="heading">Hypothesis</a></h2>
+<p>For the hypothesis the null hypothesis is taken to be that the average width of the paths straight and diagonal are the same.<span class="intersentencespace"></span> For the null hypothesis to be rejected, the alternative hypothesis should apply that the average width of diagonal paths is significantly higher than the average of the straight paths.<span class="intersentencespace"></span> For it to be significantly higher the p-value of the t-test should be lower than 0.05.</p>
 <div class="equation">\[ H_0: \mu_{width straight} = \mu_{width diagonal} \]
-</div><div class="equation">\[ H_a: \mu_{width straight} &gt; \mu_{width diagonal} \]
-</div><div id="uid1" data-tralics-id="uid1" data-number="1" class="figure" noindent="true"><span class="graphics"><img src="/img/posts/accuracyMouse/pathsEdited.jpeg" alt="pathsEdited" /></span>
-<div class="caption"><span class="header">Figure 1: </span><span class="description">Mouse trajectory paths - all trials</span></div></div>
-<div id="fig-dist" data-tralics-id="uid2" data-number="2" class="figure"><span class="graphics"><img src="/img/posts/accuracyMouse/Distribution.jpeg" alt="Distribution" /></span><div class="caption"><span class="header">Figure 2</span></div></div>
+</div><div class="equation">\[ H_a: \mu_{width straight} &lt; \mu_{width diagonal} \]
+</div><div id="uid2" data-tralics-id="uid2" data-number="2" class="figure" noindent="true"><span class="graphics"><img src="/img/posts/accuracyMouse/pathsEdited.jpeg" alt="pathsEdited" /></span>
+<div class="caption"><span class="header">Figure 2: </span><span class="description">Mouse trajectory paths - all trials</span></div></div>
 </div>
 <div class="section-star" id="discussion"><h2><a href="#discussion" class="heading">Discussion</a></h2>
 <p>The mouse trajectory paths shows trajectories in all directions, so there are no direction assumptions.<span class="intersentencespace"></span> The dataset has a length of more than thirteen thousand and is large enough.<span class="intersentencespace"></span> Even still the length of the dataset is large, the cleaned also follows a distribution curve.<span class="intersentencespace"></span> For all these reasons, the two-sample t-test is valid and applied.<span class="intersentencespace"></span> The p-value is (a lot) smaller than an alpha of 0.05, for a 95% confidence interval.<span class="intersentencespace"></span> The null hypothesis (<span class="inline_math">\( 𝐻_0 \)</span>) is rejected.</p>
 </div>
 <div class="section-star" id="conclusion"><h2><a href="#conclusion" class="heading">Conclusion</a></h2>
-<p>The null hypothesis (<span class="inline_math">\( 𝐻_0 \)</span>) is rejected based on that the p-value is much smaller than an alpha of 0.05, and the alternative hypothesis (<span class="inline_math">\( 𝐻_𝑎 \)</span>) is accepted.<span class="intersentencespace"></span> Meaning, the mean width of trajectories that are straight is lower, and the mean of diagonal trajectories are larger.<span class="intersentencespace"></span> Trackpad users are less accurate for diagonal trajectories.<span class="intersentencespace"></span> For using a program, this means that diagonal trajectories should be avoided to aid in maximising accuracy and therefor efficiency.
-</p></div>
+<p>The null hypothesis (<span class="inline_math">\( 𝐻_0 \)</span>) is rejected based on that the p-value is much smaller than an alpha of 0.05, and the alternative hypothesis (<span class="inline_math">\( 𝐻_𝑎 \)</span>) is accepted.<span class="intersentencespace"></span> Meaning, the mean width of trajectories that are straight is lower, and the mean of diagonal trajectories are larger.<span class="intersentencespace"></span> Trackpad users are less accurate for diagonal trajectories.<span class="intersentencespace"></span> For using a program, this means that diagonal trajectories should be avoided to aid in maximising accuracy and therefor efficiency.</p>
+<p>An example of such a program which is ergonomically optimized is Photoshop by Adobe.<span class="intersentencespace"></span> When using Photoshop the user often has to switch tools by selecting a different one with the cursor in on of the toolbars.<span class="intersentencespace"></span> These toolbars are situated at straight angles from the working are, highlighted in red in <a href="#fig-CS6" class="hyperref">Figure <span class="ref">3</span></a>.<span class="intersentencespace"></span> By using straight angles in such a work optimized program as Photoshop, the efficiency and accuracy of the user is increased.</p>
+<div id="fig-CS6" data-tralics-id="uid3" data-number="3" class="figure"><span class="graphics"><img src="/img/posts/accuracyMouse/Photoshop-CS6.jpg" alt="Photoshop-CS6" /></span><div class="caption"><span class="header">Figure 3</span></div></div>
+</div>
 
         <hr>
 
